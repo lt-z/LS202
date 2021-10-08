@@ -1,0 +1,163 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 20px "Nunito", Helvetica, Arial, sans-serif;
+  background-image: url("images/bg_body.gif");
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  width: 1200px;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header > img {
+  margin: 133px 0 112px 0;
+
+}
+
+header > ul {
+  margin: 0 0 44px 0;
+}
+
+header > ul > li {
+  font-size: 26px;
+  display: inline;
+  padding: 0 32px;
+}
+
+header .active {
+  font-weight: bold;
+  color: #7fb7f9;
+}
+
+header a {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+main {
+  color: #46494D;
+  margin: 0 auto;
+  background-color: white;
+  padding: 110px 16% 65px 16%;
+  box-sizing: border-box;
+}
+
+main h1::before {
+  content: "\2022\00A0\00A0\00A0";
+}
+
+main h1 {
+  font-size: 35px;
+  margin: 0 0 30px 0;
+}
+
+main h1::after {
+  content: "\00A0\00A0\00A0\2022";
+}
+
+main p {
+  margin: 0 0 55px 0;
+}
+
+main p:last-child {
+  margin: 0;
+}
+
+h2 {
+  padding: 0 0 31px 0;
+  color: #4458AC;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+footer {
+  margin: 0 auto;
+  background-color: #e7e7e7;
+  box-sizing: border-box;
+  grid-area: footer;
+  padding: 0px 0 0 0;
+}
+
+footer p {
+  padding: 70px 30% 60px 30%;
+  color: #B2B2B2;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 0 60px 0;
+  padding: 0 60px;
+}
+
+footer ul a {
+  display: inline-block;
+  height: 46px;
+  width: 46px;
+  background: url("images/icons_social-media.png") no-repeat;
+}
+
+footer ul li.twitter a {
+  background-position: 0 0;
+}
+
+footer ul li.facebook a {
+  background-position: 0 -46px;
+}
+
+footer ul li.email a {
+  background-position: 0 -92px;
+}
+
+footer ul li.instagram a {
+  background-position: 0 -138px;
+}
+
+
+@media screen and (max-width: 480px) {
+  main h1 {
+    font-size: 25px;
+  }
+
+  footer ul li {
+    padding: 0 10px;
+  }
+}
+
+#projects figure {
+  padding: 0 0 55px 0;
+}
+
+#projects figure img {
+  display: block;
+  margin: 0 -100px;
+}
+
+#projects article p {
+  padding: 0 0 50px 0;
+}
+
+#team {
+  margin: 115px 0;
+}
+
+#team ul {
+  padding: 15px 0;
+}
+
+
+#team ul.img li {
+  padding: 0 30px;
+}
+
+#team ul li {
+  display: inline;
+  padding: 0 69px;
+  font-size: 24px;
+  color: #4458AC;
+}

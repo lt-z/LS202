@@ -1,0 +1,105 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 20px "Nunito", Helvetica, Arial, sans-serif;
+  background-image: url("bg_body.gif");
+  background-repeat: repeat;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 142px 0;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  width: 85%;
+}
+
+header img {
+  margin: 158px 0 90px 0;
+}
+
+main {
+  margin: 0 auto;
+  background-color: white;
+  padding: 100px 5% 65px 5%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "about-us"
+    "about-us-p"
+    "founder"
+    "founder-name"
+    "founder-p"
+    "footer";
+}
+
+main h1::before {
+  content: "\2022\00A0\00A0\00A0";
+}
+
+main h1 {
+  font-size: 36px;
+  margin: 0 0 25px 0;
+}
+
+main h1::after {
+  content: "\00A0\00A0\00A0\2022";
+}
+
+#about-us {
+  grid-area: about-us;
+}
+
+main p {
+  margin: 0 0 155px 0;
+  grid-area: about-us-p;
+}
+
+#founder {
+  grid-area: founder;
+}
+
+main p:last-child {
+  margin: 0;
+  grid-area: founder-p;
+}
+
+h2 {
+  padding: 0 0 25px 0;
+  color: #5796af;
+  font-size: 24px;
+  font-weight: bold;
+  grid-area: founder-name;
+}
+
+footer {
+  margin: 0 auto;
+  height: 117px;
+  background-color: #e7e7e7;
+  box-sizing: border-box;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  padding: 30px 0;
+}
+
+footer ul li {
+  padding: 0 35px;
+  display: inline;
+}
+
+@media screen and (max-width: 480px) {
+  main h1 {
+    font-size: 25px;
+  }
+
+  footer ul li {
+    padding: 0 10px;
+  }
+}
+

@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+.container {
+  border: 2px solid black;
+  width: 1000px;
+  padding: 20px;
+}
+section h1,
+section h2,
+section h3 {
+  color: #ce4a4a;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+section .border {
+  border: 2px dashed;
+  padding: 30px;
+  margin: 45px;
+  width: 650px;
+}
+
+section p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+section a {
+  text-decoration: none;
+  color: #333;
+}
+
+section .inline-margin a {
+  margin: 30px;
+}
+
+section .inline-padding a {
+  padding: 30px;
+  background-color: green;
+  color: white;
+}
+
+section .float a {
+  background-color: green;
+  border: 3px solid darkgreen;
+  color: white;
+  float: left;
+  margin: 15px;
+  padding: 25px;
+  width: 120px;
+  text-align: center;
+}
+
+section .float::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.block .box-1 {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.block .box-2 {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  height: 60px;
+  margin: 20px;
+}
+
+.block .box-3 {
+  background-color: tomato;
+  color: white;
+  width: 90px;
+}
+
+.block .box-4 {
+  background-color: pink;
+  color: white;
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+}
+
+section h3 {
+  font-size: 16px;
+}
+
+.block .float-left {
+  background-color: dodgerblue;
+  border: 1px solid tomato;
+  color: white;
+  float: left;
+}
+
+.block .float-right {
+  background-color: tomato;
+  border: 1px solid dodgerblue;
+  color: white;
+  float: right;
+}
+
+.wrapper {
+  margin-bottom: 35px;
+}
+
+.wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.block .float-left-set {
+  background-color: tomato;
+  color: white;
+  float: left;
+  width: 40%;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.block .float-right-set {
+  background-color: dodgerblue;
+  color: white;
+  float: right;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.block .inline-to-bl {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.inline .wrapper {
+  text-align: center;
+}
+
+.inline a {
+  background-color: dodgerblue;
+  color: white;
+  padding: 20px 30px;
+  margin: 20px 8px 25px;
+  text-align: center;
+  display: inline-block;
+  width: 180px;
+}
+
+.dash-line {
+  width: 100%;
+  border-bottom: 2px dashed;
+}
+
+.center {
+  text-align: center;
+}
+
+.posi .wrapper {
+  width: 100%;
+}
+
+.posi .posi-box1 {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  height: 100px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+.posi .posi-box2 {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  height: 100px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+
+.posi .posi-box3 {
+  background-color: seagreen;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  line-height: 50px;
+}
+
+.posi .wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.posi ul li {
+  margin-bottom: 10px;
+}
+
+.posi .fixed-posi {
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+  background-color: dodgerblue;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 10px;
+  text-align: center;
+  width: 225px;
+}
+
+.posi .rel-posi {
+  position: relative;
+  background-color: tomato;
+  color: white;
+  width: 325px;
+  border-radius: 10px;
+  padding: 25px 35px;
+  text-align: center;
+  right: 90px;
+  bottom: -45px;
+  margin-bottom: 30px;
+}
+
+.absolute {
+  position: relative;
+}
+
+.absolute .abs-posi {
+  position: absolute;
+  background-color: green;
+  color: white;
+  width: 200px;
+  border-radius: 10px;
+  padding: 25px 35px;
+  text-align: center;
+  left: 230px;
+  top: -30px;
+  margin-bottom: 30px;
+}

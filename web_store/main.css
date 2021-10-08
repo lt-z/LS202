@@ -1,0 +1,102 @@
+@import url("https://d3jtzah944tvom.cloudfront.net/202/projects/lesson_7/web_store_catalog_final/whitespace-reset.css");
+
+body {
+  background-color: #ffd505;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+header {
+  width: 900px;
+  background-color: #057Ec1;
+  color: white;
+  padding: 30px 0;
+  margin: 0 auto 30px auto;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+h1 {
+  padding: 0 25px;
+  font-size: 2.4rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  background-color: #ececec;
+  width: 850px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 2rem;
+  padding: 0 0 25px;
+}
+
+main ul li {
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 0 2% 2%;
+  width: 23.5%;
+}
+
+li:nth-of-type(4n+1) {
+  margin-left: 0;
+}
+
+main ul::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+main figure {
+  width: 100%;
+  height: 160px;
+}
+
+img {
+  height: 140px;
+  margin: 0 auto;
+  width: auto;
+  display: block;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+}
+
+
+/* it is taken out of document flow, no space is created */
+input:checked + figure img { /* if input is checked and element is img */
+  position: absolute; /* positions it relative to its parent element (figure) */
+  top: 100px;             /*  100 px from top */
+  width: 400px;           /* width always 400px */
+  height: auto;           /* auto height */
+  left: 50%;              /* set left edge to always be at 50% */
+  margin: 0 0 0 -200px;   /* center horizontally by shifting left 200px */ 
+  z-index: 2;
+}
+
+input:checked + figure::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: fixed;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+} 
